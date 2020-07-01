@@ -6,10 +6,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Интехзапчасть</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/logo.png" type="image/png">
     </head>
     <body>
         <header class="header">
@@ -51,18 +52,24 @@
             </div>
           </div>
         <div class="slider_menu">
-            <a href="#" class="slider_item">
-                <div class="slider_arrow"></div>
-                <p class="slider_text">Список товаров</p>
-            </a>
-            <a href="#" class="slider_item slider_item-colorB">
-                <div class="slider_arrow"></div>
-                <p class="slider_text">Список товаров</p>
-            </a>
-            <a href="#" class="slider_item slider_item-colorC">
-                <div class="slider_arrow"></div>
-                <p class="slider_text">Список товаров</p>
-            </a>
+            <div>
+                <a href="#ONAS" class="slider_item">
+                    <div class="slider_arrow"></div>
+                    <p class="slider_text">О нас</p>
+                </a>
+            </div>
+            <div>
+                <a href="#USLUGI" class="slider_item slider_item-colorB">
+                    <div class="slider_arrow"></div>
+                    <p class="slider_text">Список услуг</p>
+                </a>
+            </div>
+            <div>
+                <a href="#DOPUSLUGI" class="slider_item slider_item-colorC">
+                    <div class="slider_arrow"></div>
+                    <p class="slider_text">Список дополнительных услуг</p>
+                </a>
+            </div>
             <div class="slider_button">
                 <div class="slider_arrow"></div>
             </div>
@@ -72,17 +79,17 @@
             <div class="main_container_content">
                 <div class="main_content_headerItem">
                     <div class="main_content_headerItem-icon main_content_headerItem-icon_instrument">
-                        <h2 class="main_content_headerItem-text">О нас</h2>
+                        <h2 id="ONAS" class="main_content_headerItem-text">О нас</h2>
                     </div>
                 </div>
                 <div class="text-content">
-                    <h1>Такие дела</h1>
+                    <h1>Мы - это будущее</h1>
                     <p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации новых предложений. Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
                     <p>Не следует, однако забывать, что сложившаяся структура организации играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же рамки и место обучения кадров требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий играет важную роль в формировании форм развития.</p>
                     <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности играет важную роль в формировании систем массового участия. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации форм развития. Задача организации, в особенности же сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития. Равным образом рамки и место обучения кадров играет важную роль в формировании систем массового участия. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.</p>
                     <a href="#openModal" class="text-content-button">Вступите к нам</a>
                 </div>
-                <div class="main_content_headerItem">
+                <div id="USLUGI" class="main_content_headerItem">
                     <div class="main_content_headerItem-icon main_content_headerItem-icon_instrument">
                         <h2 class="main_content_headerItem-text">Услуги починки</h2>
                     </div>
@@ -118,7 +125,7 @@
                     <div class="main_content_item-footer">15000 руб</div>
                 </a>
 
-                <div class="main_content_headerItem">
+                <div id="DOPUSLUGI" class="main_content_headerItem">
                     <div class="main_content_headerItem-icon main_content_headerItem-icon_instrument">
                         <h2 class="main_content_headerItem-text">Дополнительные Услуги</h2>
                     </div>
@@ -166,9 +173,14 @@
                 </div>
             </div>
         </main>
-        <footer>
-
+        <footer class="footer">
+            <p class="footer-text">+7 (977) 300 8339</p>
         </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous">
+        </script>
         <script src="script.js" async defer></script>
     </body>
 </html>
