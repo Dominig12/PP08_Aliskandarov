@@ -1,6 +1,9 @@
 *{
     margin:0;
 }
+html {
+    scroll-behavior: smooth;
+}
 A:link { 
     text-decoration: none;
     color: black;
