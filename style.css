@@ -100,7 +100,7 @@ body{
 }
 
 .slider_menu{
-    height: 600px;
+    min-height: 600px;
     width: 400px;
     position: fixed;
     left: -400px;

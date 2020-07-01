@@ -2,9 +2,9 @@
 let slider_menu = document.querySelector(".slider_menu");
 let slider_button = document.querySelector(".slider_button");
 
-document.body.addEventListener("click", (event) =>{
+slider_menu.addEventListener("click", (event) =>{
     let target = event.target;
-    if(!target.matches(".slider_button") && !target.matches(".slider_item"))
+    if(!target.closest(".slider_button") && !target.closest(".slider_item"))
         return
     slider_menu.classList.toggle("slider_active");
 })
