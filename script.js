@@ -5,13 +5,10 @@ let slider_button = document.querySelector(".slider_button");
 document.body.addEventListener("click", (event) =>{
     let target = event.target;
     if(target.matches(".slider_item"))
-        slider_menu.classList.remove("slider_active");
+        slider_menu.classList.toggle("slider_active")
     if(!target.matches(".slider_button"))
         return
-    if(slider_menu.classList.contains("slider_active"))
-        slider_menu.classList.remove("slider_active");
-    else
-        slider_menu.classList.add("slider_active");
+    slider_menu.classList.toggle("slider_active")
     
 })
 
