@@ -2,7 +2,7 @@
 let slider_menu = document.querySelector(".slider_menu");
 let slider_button = document.querySelector(".slider_button");
 
-slider_menu.addEventListener("click", (event) =>{
+document.body.addEventListener("click", (event) =>{
     let target = event.target;
     if(!target.closest(".slider_button") && !target.closest(".slider_item"))
         return
