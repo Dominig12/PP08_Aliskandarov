@@ -4,12 +4,9 @@ let slider_button = document.querySelector(".slider_button");
 
 document.body.addEventListener("click", (event) =>{
     let target = event.target;
-    if(target.matches(".slider_item"))
-        slider_menu.classList.toggle("slider_active")
-    if(!target.matches(".slider_button"))
+    if(!target.matches(".slider_button") && !target.matches(".slider_item"))
         return
-    slider_menu.classList.toggle("slider_active")
-    
+    slider_menu.classList.toggle("slider_active");
 })
 
 // Cache selectors
